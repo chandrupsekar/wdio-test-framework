@@ -1,0 +1,85 @@
+{
+  "uid" : "f9772309e46cfdd5",
+  "name" : "verify login",
+  "fullName" : "login page feature test.verify login",
+  "historyId" : "8a7ddf193ba00f54eae8c896f4a9e9fc",
+  "time" : {
+    "start" : 1585558442951,
+    "stop" : 1585558443247,
+    "duration" : 296
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "loginPageElement is not defined",
+  "statusTrace" : "ReferenceError: loginPageElement is not defined\n                    at LoginPage.doLogin (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\pages\\login.page.js:16:32)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:18:19)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "loginPageElement is not defined",
+    "statusTrace" : "ReferenceError: loginPageElement is not defined\n                    at LoginPage.doLogin (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\pages\\login.page.js:16:32)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:18:19)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+    "steps" : [ {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585558442957,
+        "stop" : 1585558443247,
+        "duration" : 290
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testClass",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify login"
+  }, {
+    "name" : "package",
+    "value" : "login page feature test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-10.0.18362"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9772309e46cfdd5.json",
+  "parameterValues" : [ "Chrome-10.0.18362" ]
+}

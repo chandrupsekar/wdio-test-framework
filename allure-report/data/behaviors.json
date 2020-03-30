@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "verify login page title",
+    "uid" : "8b9bb6a7f82497ec",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1585558645816,
+      "stop" : 1585558653136,
+      "duration" : 7320
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chrome-10.0.18362" ]
+  }, {
+    "name" : "verify sign up link",
+    "uid" : "53f82891c84c528d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1585558653136,
+      "stop" : 1585558653492,
+      "duration" : 356
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chrome-10.0.18362" ]
+  }, {
+    "name" : "verify login",
+    "uid" : "99cdcdb3f6425d94",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1585558653492,
+      "stop" : 1585558697234,
+      "duration" : 43742
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chrome-10.0.18362" ]
+  } ]
+}

@@ -1,0 +1,31 @@
+[ {
+  "uid" : "99cdcdb3f6425d94",
+  "name" : "verify login",
+  "time" : {
+    "start" : 1585558653492,
+    "stop" : 1585558697234,
+    "duration" : 43742
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "53f82891c84c528d",
+  "name" : "verify sign up link",
+  "time" : {
+    "start" : 1585558653136,
+    "stop" : 1585558653492,
+    "duration" : 356
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8b9bb6a7f82497ec",
+  "name" : "verify login page title",
+  "time" : {
+    "start" : 1585558645816,
+    "stop" : 1585558653136,
+    "duration" : 7320
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

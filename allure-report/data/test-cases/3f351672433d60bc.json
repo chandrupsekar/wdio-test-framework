@@ -1,0 +1,101 @@
+{
+  "uid" : "3f351672433d60bc",
+  "name" : "verify login page title",
+  "fullName" : "login page feature test.verify login page title",
+  "historyId" : "d79ad2d87a70aa8d2b1476a81f7677a2",
+  "time" : {
+    "start" : 1585558438476,
+    "stop" : 1585558442624,
+    "duration" : 4148
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "net::ERR_NAME_NOT_RESOLVED at https://app.hubspot/",
+  "statusTrace" : "net::ERR_NAME_NOT_RESOLVED at https://app.hubspot/\n                    at Frame.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:111:15)\n                    at Page.goto (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\Page.js:672:49)\n                    at Page.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:112:23)\n                    at DevToolsDriver.navigateTo (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\commands\\navigateTo.js:13:14)\n                    at Browser.wrappedCommand (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\devtoolsdriver.js:92:47)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at async Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:88:21)\n                    at Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:82:22)\n                    at Browser.wrapCommandFn (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:59:40)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:8:17)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "net::ERR_NAME_NOT_RESOLVED at https://app.hubspot/",
+    "statusTrace" : "net::ERR_NAME_NOT_RESOLVED at https://app.hubspot/\n                    at Frame.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:111:15)\n                    at Page.goto (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\Page.js:672:49)\n                    at Page.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:112:23)\n                    at DevToolsDriver.navigateTo (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\commands\\navigateTo.js:13:14)\n                    at Browser.wrappedCommand (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\devtoolsdriver.js:92:47)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at async Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:88:21)\n                    at Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:82:22)\n                    at Browser.wrapCommandFn (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:59:40)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:8:17)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+    "steps" : [ {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585558440380,
+        "stop" : 1585558442624,
+        "duration" : 2244
+      },
+      "status" : "broken",
+      "statusMessage" : "net::ERR_NAME_NOT_RESOLVED at https://app.hubspot/\n                    at Frame.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:111:15)\n                    at Page.goto (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\Page.js:672:49)\n                    at Page.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\puppeteer-core\\lib\\helper.js:112:23)\n                    at DevToolsDriver.navigateTo (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\commands\\navigateTo.js:13:14)\n                    at Browser.wrappedCommand (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\devtools\\build\\devtoolsdriver.js:92:47)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at async Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:88:21)\n                    at Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:82:22)\n                    at Browser.wrapCommandFn (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:59:40)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:8:17)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+      "steps" : [ {
+        "name" : "undefined undefined",
+        "time" : {
+          "start" : 1585558442109,
+          "stop" : 1585558442621,
+          "duration" : 512
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testClass",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify login page title"
+  }, {
+    "name" : "package",
+    "value" : "login page feature test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-10.0.18362"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f351672433d60bc.json",
+  "parameterValues" : [ "Chrome-10.0.18362" ]
+}

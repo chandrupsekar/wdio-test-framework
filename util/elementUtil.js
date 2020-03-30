@@ -1,3 +1,4 @@
+const constant = require('../config/constants')
 class ElementUtil{
     doClick(element){
         element.waitForDisplayed()
@@ -11,9 +12,17 @@ class ElementUtil{
         element.waitForDisplayed()
         return element.getText()
     }
-    doGetPageTitle(){
+    doGetPageTitle(pageTitle){
+        browser.waitUntil(()=>{
+            return (browser.getTitle()===pageTitle)
+        }, 10000, 'title is not displayed')
         return browser.getTitle()
     }
+    doIsDisplayed(element){
+        element.waitForDisplayed()
+        return element.isDisplayed()
+    }
+
 }
 
 module.exports = new ElementUtil()

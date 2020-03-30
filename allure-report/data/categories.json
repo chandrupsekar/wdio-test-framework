@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "assert is not defined",
+      "children" : [ {
+        "name" : "verify login page title",
+        "uid" : "8b9bb6a7f82497ec",
+        "parentUid" : "f34cc5f8616ffc5719078f8e3580248a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1585558645816,
+          "stop" : 1585558653136,
+          "duration" : 7320
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome-10.0.18362" ]
+      }, {
+        "name" : "verify sign up link",
+        "uid" : "53f82891c84c528d",
+        "parentUid" : "f34cc5f8616ffc5719078f8e3580248a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1585558653136,
+          "stop" : 1585558653492,
+          "duration" : 356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome-10.0.18362" ]
+      } ],
+      "uid" : "f34cc5f8616ffc5719078f8e3580248a"
+    }, {
+      "name" : "element (\"#username\") still not displayed after 10000ms",
+      "children" : [ {
+        "name" : "verify login",
+        "uid" : "99cdcdb3f6425d94",
+        "parentUid" : "dfcb7ac495ca6a339a2a7cd7bff0da59",
+        "status" : "broken",
+        "time" : {
+          "start" : 1585558653492,
+          "stop" : 1585558697234,
+          "duration" : 43742
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome-10.0.18362" ]
+      } ],
+      "uid" : "dfcb7ac495ca6a339a2a7cd7bff0da59"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
