@@ -194,7 +194,7 @@ exports.config = {
      */
     beforeTest: function (test, context) {
         const chai = require('chai')
-            const chaiWebdriver = require('chai-webdrdiverio').default
+            const chaiWebdriver = require('chai-webdriverio').default
             chai.use(chaiWebdriver(browser))
 
             global.assert = chai.assert
