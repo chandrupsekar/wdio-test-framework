@@ -4,25 +4,29 @@ class ElementUtil{
         element.waitForDisplayed()
         element.click()
     }
-    doSetValue(element){
+
+    doSetValue(element, value){
         element.waitForDisplayed()
         element.setValue(value)
     }
+
     doGetText(element){
         element.waitForDisplayed()
         return element.getText()
     }
-    doGetPageTitle(pageTitle){
-        browser.waitUntil(()=>{
-            return (browser.getTitle()===pageTitle)
-        }, 10000, 'title is not displayed')
-        return browser.getTitle()
-    }
+
     doIsDisplayed(element){
         element.waitForDisplayed()
         return element.isDisplayed()
     }
 
+    doGetPageTitle(pageTitle){
+        browser.waitUntil(function(){
+            return (browser.getTitle() === pageTitle)
+        }, 10000, 'title is not displayed after the given time'
+    )
+        return browser.getTitle()
+    }
 }
 
-module.exports = new ElementUtil()
+module.exports  = new ElementUtil()

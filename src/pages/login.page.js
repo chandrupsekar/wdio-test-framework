@@ -1,20 +1,19 @@
-const loginPageElements = require('../elements/loginpage.elements')
 const elementUtil = require('../../util/elementUtil')
 const constants  = require('../../config/constants')
-class LoginPage{
+const loginPageElements = require('../elements/loginpage.elements')
 
-    //Page actions:
-    getPageTitle(){
-        return elementUtil.doGetPageTitle()
-    }
+class LoginPage {
     
-    doesSignUpLinkExist(){
+    //page actions:
+    getPageTitle() {
+        return elementUtil.doGetPageTitle(constants.LOGIN_PAGE_TITLE)
+    }
+    isSignUpLinkExist() {
         return elementUtil.doIsDisplayed(loginPageElements.signUpLink)
     }
-
-    doLogin(emailID, pwd){
-        elementUtil.doSetValue(loginPageElements.username, 'username')
-        elementUtil.doSetValue(loginPageElements.password, 'password')
+    doLogin(emailID, pwd) {
+        elementUtil.doSetValue(loginPageElements.username, emailID)
+        elementUtil.doSetValue(loginPageElements.password, pwd)
         elementUtil.doClick(loginPageElements.loginBtn)
     }
 }

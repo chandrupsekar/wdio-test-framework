@@ -3,19 +3,21 @@ const loginPageElements = require('../../elements/loginpage.elements')
 const configData = require('../../../config/config')
 const constants = require('../../../config/constants')
 
-describe('login page feature test', ()=>{
-    it('verify login page title', ()=>{
+describe('login page feature test', function(){
+    it('verify login page title', function(){
         browser.url('/')
-        browser.maximizeWindow
-        const title = (loginPage.getPageTitle)
-        console.log('login page title is : ', title)
+        //browser.maximizeWindown
+        const title = loginPage.getPageTitle()
+        console.log('login page title is :', title);
         assert.equal(constants.LOGIN_PAGE_TITLE, title, 'title is not found')
     })
-    it('verify sign up link', ()=>{
-        assert.equal(true, loginPage.doesSignUpLinkExist(), 'sign up link is not present.')
+    it('verify sign up link', function(){
+        browser.url('/')
+       assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
     })
-    it('verify login', ()=>{
+    it('verify login', function(){
+        browser.url('/')
+        //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         loginPage.doLogin(configData.username, configData.password)
-        loginPage.doClick()
-    })
+     })
 })

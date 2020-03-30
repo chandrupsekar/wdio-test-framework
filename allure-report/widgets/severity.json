@@ -1,31 +1,31 @@
 [ {
-  "uid" : "53f82891c84c528d",
-  "name" : "verify sign up link",
-  "time" : {
-    "start" : 1585558653136,
-    "stop" : 1585558653492,
-    "duration" : 356
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "8b9bb6a7f82497ec",
+  "uid" : "2f460071258584d7",
   "name" : "verify login page title",
   "time" : {
-    "start" : 1585558645816,
-    "stop" : 1585558653136,
-    "duration" : 7320
+    "start" : 1585565478864,
+    "stop" : 1585565516483,
+    "duration" : 37619
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "99cdcdb3f6425d94",
+  "uid" : "752dbca8e198b2e0",
   "name" : "verify login",
   "time" : {
-    "start" : 1585558653492,
-    "stop" : 1585558697234,
-    "duration" : 43742
+    "start" : 1585565519201,
+    "stop" : 1585565522630,
+    "duration" : 3429
   },
-  "status" : "broken",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17e49ef55c830d63",
+  "name" : "verify sign up link",
+  "time" : {
+    "start" : 1585565516484,
+    "stop" : 1585565519201,
+    "duration" : 2717
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

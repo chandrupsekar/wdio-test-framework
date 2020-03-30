@@ -1,0 +1,158 @@
+{
+  "uid" : "17e49ef55c830d63",
+  "name" : "verify sign up link",
+  "fullName" : "login page feature test.verify sign up link",
+  "historyId" : "cc0bc83302dc176a1c40d63670910a9",
+  "time" : {
+    "start" : 1585565516484,
+    "stop" : 1585565519201,
+    "duration" : 2717
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565516488,
+        "stop" : 1585565517423,
+        "duration" : 935
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565517432,
+        "stop" : 1585565517444,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565517457,
+        "stop" : 1585565517462,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565519124,
+        "stop" : 1585565519129,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565519154,
+        "stop" : 1585565519172,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1585565519189,
+        "stop" : 1585565519199,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testClass",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify sign up link"
+  }, {
+    "name" : "package",
+    "value" : "login page feature test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-10.0.18362"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "17e49ef55c830d63.json",
+  "parameterValues" : [ "Chrome-10.0.18362" ]
+}
