@@ -18,6 +18,7 @@ describe('login page feature test', function(){
     it('verify login', function(){
         browser.url('/')
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
+        //sample line 
         loginPage.doLogin(configData.username, configData.password)
      })
 })
