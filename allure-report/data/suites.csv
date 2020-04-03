@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Mar 30 16:21:59 IST 2020","Mon Mar 30 16:22:02 IST 2020","3429","","login page feature test","","login page feature test","verify login","verify login",""
-"passed","Mon Mar 30 16:21:56 IST 2020","Mon Mar 30 16:21:59 IST 2020","2717","","login page feature test","","login page feature test","verify sign up link","verify sign up link",""
-"broken","Mon Mar 30 16:21:18 IST 2020","Mon Mar 30 16:21:56 IST 2020","37619","","login page feature test","","login page feature test","verify login page title","verify login page title",""
