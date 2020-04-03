@@ -2,6 +2,8 @@ const loginPage = require('../../pages/login.page')
 const loginPageElements = require('../../elements/loginpage.elements')
 const configData = require('../../../config/config')
 const constants = require('../../../config/constants')
+const mysql = require('mysql')
+
 
 describe('login page feature test', function(){
     it('verify login page title', function(){
@@ -19,5 +21,5 @@ describe('login page feature test', function(){
         browser.url('/')
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         loginPage.doLogin(configData.username, configData.password)
-     })
+    })
 })

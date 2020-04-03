@@ -25,6 +25,7 @@
     "chai": "^4.2.0",
     "chai-webdriverio": "^1.0.0",
     "chromedriver": "^80.0.1",
+    "mysql": "^2.18.1",
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^6.0.5"
   }
