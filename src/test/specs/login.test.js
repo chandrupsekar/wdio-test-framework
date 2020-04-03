@@ -2,7 +2,6 @@ const loginPage = require('../../pages/login.page')
 const loginPageElements = require('../../elements/loginpage.elements')
 const configData = require('../../../config/config')
 const constants = require('../../../config/constants')
-const mysql = require('mysql')
 
 
 describe('login page feature test', function(){
