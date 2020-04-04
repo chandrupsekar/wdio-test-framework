@@ -110,3 +110,14 @@
     - git pull origin master // to pul the files from github to your local repository
 
     
+=> how to add a excel sheet to framework
+	-add the below dependency to existing package.json file 
+	"dependencies": {
+   	 "xlsx": "^0.15.6"
+  	}
+
+	-next on terminal execute npm install xlsx
+	it will update node_modules and package-lock-json automatically
+
+	-if you want to just execute the sheet then run node sheetname
+	
