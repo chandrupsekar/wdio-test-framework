@@ -3,39 +3,52 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "verify login page title",
-    "uid" : "2f460071258584d7",
+    "uid" : "e3413dba9857eacb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
+    "status" : "passed",
     "time" : {
-      "start" : 1585565478864,
-      "stop" : 1585565516483,
-      "duration" : 37619
+      "start" : 1585976246776,
+      "stop" : 1585976270050,
+      "duration" : 23274
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chrome-10.0.18362" ]
   }, {
     "name" : "verify sign up link",
-    "uid" : "17e49ef55c830d63",
+    "uid" : "87a99ad3b5bcd68",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1585565516484,
-      "stop" : 1585565519201,
-      "duration" : 2717
+      "start" : 1585976270050,
+      "stop" : 1585976273438,
+      "duration" : 3388
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chrome-10.0.18362" ]
   }, {
     "name" : "verify login",
-    "uid" : "752dbca8e198b2e0",
+    "uid" : "66515c9e4ea28ca5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1585565519201,
-      "stop" : 1585565522630,
-      "duration" : 3429
+      "start" : 1585976273439,
+      "stop" : 1585976277668,
+      "duration" : 4229
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chrome-10.0.18362" ]
+  }, {
+    "name" : "get data from sheet",
+    "uid" : "8714fb31a922402f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1585976277668,
+      "stop" : 1585976278079,
+      "duration" : 411
     },
     "flaky" : false,
     "newFailed" : false,
