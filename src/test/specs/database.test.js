@@ -1,13 +1,13 @@
 const mysql = require('mysql')
-const db = require('../../../util/database.util')
+const dbase = require('../../../util/database.util')
 
-
-describe('Database Connectivity', ()=>{
-    it('fetching from the database', ()=>{
-        db.retrieve()
+describe('database actions : ', ()=>{
+    this.retries(3)
+    it('fetching from a database', ()=>{
+        dbase.retrieve()
     })
 
-    it('inserting into the database', ()=>{
-        db.insert()
+    it('inserting into a database',()=>{
+        dbase.insert()
     })
 })

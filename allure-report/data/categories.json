@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "waitUntil condition timed out after 10000ms",
+      "children" : [ {
+        "name" : "verify login page title",
+        "uid" : "ed7be12e91374391",
+        "parentUid" : "4a39ceb8d3ac20a9f1d7777c3a649a3c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586088809540,
+          "stop" : 1586088825503,
+          "duration" : 15963
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chrome-10.0.18362" ]
+      } ],
+      "uid" : "4a39ceb8d3ac20a9f1d7777c3a649a3c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

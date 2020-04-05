@@ -1,0 +1,78 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "database actions : ",
+    "children" : [ {
+      "name" : "fetching from a database",
+      "uid" : "e189f3ae709ce538",
+      "parentUid" : "ee0b5c2a081d817c7882dbe1096321c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088809083,
+        "stop" : 1586088809210,
+        "duration" : 127
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    }, {
+      "name" : "inserting into a database",
+      "uid" : "d59ccf61857af913",
+      "parentUid" : "ee0b5c2a081d817c7882dbe1096321c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088809210,
+        "stop" : 1586088809218,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    } ],
+    "uid" : "ee0b5c2a081d817c7882dbe1096321c4"
+  }, {
+    "name" : "login page feature test",
+    "children" : [ {
+      "name" : "verify login page title",
+      "uid" : "ed7be12e91374391",
+      "parentUid" : "a30a6882edeb37f0546bbff4026b702b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1586088809540,
+        "stop" : 1586088825503,
+        "duration" : 15963
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    }, {
+      "name" : "verify sign up link",
+      "uid" : "51874187482754f9",
+      "parentUid" : "a30a6882edeb37f0546bbff4026b702b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088825504,
+        "stop" : 1586088828159,
+        "duration" : 2655
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    }, {
+      "name" : "verify login",
+      "uid" : "e7312d09f7972b47",
+      "parentUid" : "a30a6882edeb37f0546bbff4026b702b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088828159,
+        "stop" : 1586088831838,
+        "duration" : 3679
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    } ],
+    "uid" : "a30a6882edeb37f0546bbff4026b702b"
+  } ]
+}

@@ -5,6 +5,7 @@ const constants = require('../../../config/constants')
 
 
 describe('login page feature test', function(){
+    this.retries(config.retries)
     it('verify login page title', function(){
         browser.url('/')
         //browser.maximizeWindown
@@ -14,7 +15,7 @@ describe('login page feature test', function(){
     })
     it('verify sign up link', function(){
         browser.url('/')
-       assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
+        assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
     })
     it('verify login', function(){
         browser.url('/')
