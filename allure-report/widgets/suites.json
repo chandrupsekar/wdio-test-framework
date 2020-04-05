@@ -1,5 +1,5 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
     "uid" : "d9ed5704eee91a664d7439de9aa464a1",
     "name" : "login page feature test",
@@ -10,6 +10,17 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 3
+    }
+  }, {
+    "uid" : "f809e3984fcf928717ad4eb7a36c6284",
+    "name" : "Database Connectivity",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   } ]
 }

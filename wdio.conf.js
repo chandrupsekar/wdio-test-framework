@@ -89,7 +89,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://app.hubspot.com/login',
+    baseUrl: 'https://app.hubspot.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -124,7 +124,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: [['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
  
     //
     // Options to be passed to Mocha.
@@ -194,7 +194,7 @@ exports.config = {
      */
     beforeTest: function (test, context) {
         const chai = require('chai')
-            const chaiWebdriver = require('chai-webdriverio').default
+            const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
             chai.use(chaiWebdriver(browser))
 
             global.assert = chai.assert

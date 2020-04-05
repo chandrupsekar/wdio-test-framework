@@ -19,9 +19,9 @@
 
     - go to wdio.config and add this to beforeTest
         -
-        beforeTest: function (test, context) {
+        beforeTest: function () {//remove parameters from function()
             const chai = require('chai')
-            const chaiWebdriver = require('chai-webdrdiverio').default
+            const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
             chai.use(chaiWebdriver(browser))
 
             global.assert = chai.assert
@@ -107,6 +107,15 @@
 
     - git push origin master (git push -u origin master) // to push the committed files to the github repository if you use (-u)flag it will remember your preferences for remote and brnch and you can simply use the command git push next time
 
-    - git pull origin master // to pul the files from github to your local repository
+    - git pull origin master // to pull the files from github to your local repository
 
-    
+    => other git commands
+
+        - git branch -r // it shows the branches
+                -if you are not able to see all branches by using this, try to update the repository
+                    - I used git remote set-url https://github.com/chandrupsekar/wdio-test-framework  // to set the remote again
+                        and then I was able to see all the branches in my local repository
+
+        - git checkout branch_name  //it moves to the branch
+        - git push origin branch_name // to push to a particular branch
+

@@ -3,6 +3,7 @@ const loginPageElements = require('../../elements/loginpage.elements')
 const configData = require('../../../config/config')
 const constants = require('../../../config/constants')
 
+
 describe('login page feature test', function(){
     it('verify login page title', function(){
         browser.url('/')
@@ -19,5 +20,5 @@ describe('login page feature test', function(){
         browser.url('/')
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         loginPage.doLogin(configData.username, configData.password)
-     })
+    })
 })

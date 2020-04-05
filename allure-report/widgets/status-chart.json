@@ -1,30 +1,50 @@
 [ {
-  "uid" : "752dbca8e198b2e0",
-  "name" : "verify login",
-  "time" : {
-    "start" : 1585565519201,
-    "stop" : 1585565522630,
-    "duration" : 3429
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "17e49ef55c830d63",
+  "uid" : "5cc201f3930e6cf9",
   "name" : "verify sign up link",
   "time" : {
-    "start" : 1585565516484,
-    "stop" : 1585565519201,
-    "duration" : 2717
+    "start" : 1586064593150,
+    "stop" : 1586064595872,
+    "duration" : 2722
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2f460071258584d7",
+  "uid" : "ac634939f43e2037",
+  "name" : "inserting into database",
+  "time" : {
+    "start" : 1586064575791,
+    "stop" : 1586064575793,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71bdc6f8a05fd7fc",
+  "name" : "fetching data from database",
+  "time" : {
+    "start" : 1586064572267,
+    "stop" : 1586064575790,
+    "duration" : 3523
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9dd55879a08db8b0",
+  "name" : "verify login",
+  "time" : {
+    "start" : 1586064595872,
+    "stop" : 1586064598503,
+    "duration" : 2631
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9e7ab31c1964111",
   "name" : "verify login page title",
   "time" : {
-    "start" : 1585565478864,
-    "stop" : 1585565516483,
-    "duration" : 37619
+    "start" : 1586064572418,
+    "stop" : 1586064593149,
+    "duration" : 20731
   },
   "status" : "broken",
   "severity" : "normal"
