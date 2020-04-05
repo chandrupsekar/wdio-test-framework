@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mysql = require('mysql')
 const util = require('../config/database.config')
 
@@ -46,3 +47,22 @@ class Database {
 }
 
 module.exports = new Database()
+||||||| merged common ancestors
+=======
+const mysql = require('mysql')
+const util = require('../config/database.config')
+
+class Database {
+    getConnection(){
+        var connection = mysql.createConnection({
+            host        : util.host, 
+            port        : util.port,
+            user        : util.user,
+            password    : util.password,
+            database    : util.database
+        });
+        connection.connect()
+        return connection
+    }
+}
+>>>>>>> 53c2bc9369a825f0a154d35638d2ad8be73faad0

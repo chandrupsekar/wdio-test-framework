@@ -25,8 +25,15 @@
     "@wdio/sync": "^6.0.12",
     "chai": "^4.2.0",
     "chai-webdriverio": "^1.0.0",
+<<<<<<< HEAD
     "chromedriver": "^80.0.2",
     "mysql": "^2.18.1",
+||||||| merged common ancestors
+    "chromedriver": "^80.0.1",
+=======
+    "chromedriver": "^80.0.1",
+    "mysql": "^2.18.1",
+>>>>>>> 53c2bc9369a825f0a154d35638d2ad8be73faad0
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^6.0.5"
   }
