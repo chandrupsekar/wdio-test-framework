@@ -109,4 +109,36 @@
 
     - git pull origin master // to pul the files from github to your local repository
 
+
+=> To execute tests on multiple browsers
+    -install selenium-standalone
+     npm i –save-dev wdio-selenium-standalone-service
+
+    -Update capabilities for different browsers
+     capabilities: [{
+            browserName: 'firefox',
+            browserVersion: '74.0 ',
+            //name: 'login.test',
+            //build: process.env.BUILD_NUMBER
+        },{
+            browserName: 'chrome',
+            browserVersion: 'latest',
+            maxInstances: 2
+            //name: 'verify login page title',
+            //build: process.env.BUILD_NUMBER
+        },{
+            browserName: 'internet explorer',
+            browserVersion: '11.0',
+           // build: process.env.BUILD_NUMBER
+         },{
+            browserName: 'safari',
+            browserVersion: '6',
+            //build: process.env.BUILD_NUMBER
+        }
+    ],
+
+
+
+     
+
     
