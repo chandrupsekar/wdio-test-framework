@@ -17,14 +17,30 @@
   },
   "homepage": "https://github.com/chandrupsekar/wdio-test-framework#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "@wdio/allure-reporter": "^6.0.8",
     "@wdio/cli": "^6.0.9",
     "@wdio/local-runner": "^6.0.9",
     "@wdio/mocha-framework": "^6.0.8",
     "@wdio/sync": "^6.0.8",
+||||||| merged common ancestors
+    "@wdio/allure-reporter": "^6.0.4",
+    "@wdio/cli": "^6.0.5",
+    "@wdio/local-runner": "^6.0.5",
+    "@wdio/mocha-framework": "^6.0.4",
+    "@wdio/sync": "^6.0.1",
+=======
+    "@wdio/allure-reporter": "^6.0.12",
+    "@wdio/cli": "^6.0.5",
+    "@wdio/local-runner": "^6.0.13",
+    "@wdio/mocha-framework": "^6.0.13",
+    "@wdio/spec-reporter": "^6.0.12",
+    "@wdio/sync": "^6.0.12",
+>>>>>>> master
     "chai": "^4.2.0",
     "chai-webdriverio": "^1.0.0",
-    "chromedriver": "^80.0.1",
+    "chromedriver": "^80.0.2",
+    "mysql": "^2.18.1",
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^6.0.9"
   },
