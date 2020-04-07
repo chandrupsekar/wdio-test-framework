@@ -9,6 +9,7 @@ const sheetData=require('../../../config/sheetconfig')
 
 describe('login page feature test', function(){
         //test case to verify the login page title
+        /*
     it('verify login page title', function(){
         browser.url('/')         //launching the browser '/' indicates the base url in wdio.config.js
         //browser.maximizeWindown
@@ -27,7 +28,7 @@ describe('login page feature test', function(){
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         //sample line 
         loginPage.doLogin(configData.username, configData.password)
-    })
+    })*/
      it('get data from sheet',function(){
         var wb=sheetData.getExcelSheetName()
         var ws=wb.Sheets["marks"];
