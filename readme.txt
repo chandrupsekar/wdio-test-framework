@@ -112,6 +112,7 @@
 
     - git pull origin master // to pul the files from github to your local repository
 
+<<<<<<< HEAD
     
 => working with node-any-jdbc
     - Although it is not necessary, but before you install the windows specific build tools, make sure you uninstall other `microsoft visual c++ 2005 redistributable` software from the machine. You can install it afterwards if require a specific version for other purpose.
@@ -130,3 +131,40 @@
     -  Wait for build tool to be installed and once done exit from that shell, launch another elevated PowerShell or CMD.exe (run as Administrator)
 
     - npm config set msvs_version 2015
+||||||| merged common ancestors
+    
+=======
+
+=> To execute tests on multiple browsers
+    -install selenium-standalone
+     npm i –save-dev wdio-selenium-standalone-service
+
+    -Update capabilities for different browsers
+     capabilities: [{
+            browserName: 'firefox',
+            browserVersion: '74.0 ',
+            //name: 'login.test',
+            //build: process.env.BUILD_NUMBER
+        },{
+            browserName: 'chrome',
+            browserVersion: 'latest',
+            maxInstances: 2
+            //name: 'verify login page title',
+            //build: process.env.BUILD_NUMBER
+        },{
+            browserName: 'internet explorer',
+            browserVersion: '11.0',
+           // build: process.env.BUILD_NUMBER
+         },{
+            browserName: 'safari',
+            browserVersion: '6',
+            //build: process.env.BUILD_NUMBER
+        }
+    ],
+
+
+
+     
+
+    
+>>>>>>> 59300e874d48f53d507d4e497daad8fdbca95e83
