@@ -1,4 +1,5 @@
 [ {
+
   "uid" : "369ac8fbd7bed722",
   "name" : "verify login page title",
   "time" : {
@@ -29,6 +30,7 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
+
   "uid" : "affad02482cf08b9",
   "name" : "verify sign up link",
   "time" : {
@@ -49,6 +51,7 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
+
   "uid" : "ddb9a5ef77925dd9",
   "name" : "verify sign up link",
   "time" : {

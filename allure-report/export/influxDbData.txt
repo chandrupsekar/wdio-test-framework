@@ -1,3 +1,4 @@
+
 launch_status failed=0 1585893036000000000
 launch_status broken=0 1585893036000000000
 launch_status passed=6 1585893036000000000
@@ -9,3 +10,4 @@ launch_time max_duration=9446 1585893036000000000
 launch_time sum_duration=30364 1585893036000000000
 launch_retries retries=0 1585893036000000000
 launch_retries run=6 1585893036000000000
+

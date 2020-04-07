@@ -1,4 +1,5 @@
 launch_status_failed 0
+
 launch_status_broken 0
 launch_status_passed 6
 launch_status_skipped 0

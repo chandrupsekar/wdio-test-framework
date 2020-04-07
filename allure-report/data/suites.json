@@ -2,13 +2,46 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
+    "name" : "database actions : ",
+    "children" : [ {
+      "name" : "fetching from a database",
+      "uid" : "e189f3ae709ce538",
+      "parentUid" : "c6601fa3b582da4f889ee726818f97cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088809083,
+        "stop" : 1586088809210,
+        "duration" : 127
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    }, {
+      "name" : "inserting into a database",
+      "uid" : "d59ccf61857af913",
+      "parentUid" : "c6601fa3b582da4f889ee726818f97cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586088809210,
+        "stop" : 1586088809218,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-10.0.18362" ]
+    } ],
+    "uid" : "c6601fa3b582da4f889ee726818f97cb"
+  }, {
     "name" : "login page feature test",
     "children" : [ {
       "name" : "verify login page title",
+
       "uid" : "369ac8fbd7bed722",
+
       "parentUid" : "d9ed5704eee91a664d7439de9aa464a1",
       "status" : "passed",
       "time" : {
+<
         "start" : 1585892982383,
         "stop" : 1585892991829,
         "duration" : 9446
@@ -31,6 +64,7 @@
       "parameters" : [ "firefox-10.0" ]
     }, {
       "name" : "verify sign up link",
+
       "uid" : "ddb9a5ef77925dd9",
       "parentUid" : "d9ed5704eee91a664d7439de9aa464a1",
       "status" : "passed",
@@ -70,6 +104,7 @@
       "parameters" : [ "chrome-80.0.3987.162" ]
     }, {
       "name" : "verify login",
+
       "uid" : "4957562694e03dab",
       "parentUid" : "d9ed5704eee91a664d7439de9aa464a1",
       "status" : "passed",

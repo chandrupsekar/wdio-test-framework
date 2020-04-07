@@ -1,0 +1,301 @@
+{
+  "uid" : "ed7be12e91374391",
+  "name" : "verify login page title",
+  "fullName" : "login page feature test.verify login page title",
+  "historyId" : "d79ad2d87a70aa8d2b1476a81f7677a2",
+  "time" : {
+    "start" : 1586088809540,
+    "stop" : 1586088825503,
+    "duration" : 15963
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "waitUntil condition timed out after 10000ms",
+  "statusTrace" : "Error: waitUntil condition timed out after 10000ms\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\runner\\node_modules\\webdriverio\\build\\commands\\browser\\waitUntil.js:37:13\n                    at async Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:88:21)\n                    at Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:82:22)\n                    at Browser.wrapCommandFn (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:59:40)\n                    at ElementUtil.doGetPageTitle (G:\\javascript automation\\New folder\\wdio-test-framework\\util\\element.util.js:24:17)\n                    at LoginPage.getPageTitle (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\pages\\login.page.js:9:28)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:11:33)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "waitUntil condition timed out after 10000ms",
+    "statusTrace" : "Error: waitUntil condition timed out after 10000ms\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\runner\\node_modules\\webdriverio\\build\\commands\\browser\\waitUntil.js:37:13\n                    at async Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:88:21)\n                    at Browser.runCommandWithHooks (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:82:22)\n                    at Browser.wrapCommandFn (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:59:40)\n                    at ElementUtil.doGetPageTitle (G:\\javascript automation\\New folder\\wdio-test-framework\\util\\element.util.js:24:17)\n                    at LoginPage.getPageTitle (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\pages\\login.page.js:9:28)\n                    at Context.<anonymous> (G:\\javascript automation\\New folder\\wdio-test-framework\\src\\test\\specs\\login.test.js:11:33)\n                    at Context.executeSync (G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:56:18)\n                    at G:\\javascript automation\\New folder\\wdio-test-framework\\node_modules\\@wdio\\sync\\build\\index.js:82:70",
+    "steps" : [ {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088809583,
+        "stop" : 1586088814439,
+        "duration" : 4856
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088814446,
+        "stop" : 1586088814452,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088814945,
+        "stop" : 1586088814946,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088815443,
+        "stop" : 1586088815445,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088816201,
+        "stop" : 1586088816204,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088816443,
+        "stop" : 1586088816444,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088816944,
+        "stop" : 1586088816945,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088817443,
+        "stop" : 1586088817445,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088817943,
+        "stop" : 1586088817945,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088818444,
+        "stop" : 1586088818445,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088818943,
+        "stop" : 1586088818944,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088819443,
+        "stop" : 1586088819445,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088819944,
+        "stop" : 1586088819945,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "undefined undefined",
+      "time" : {
+        "start" : 1586088825118,
+        "stop" : 1586088825500,
+        "duration" : 382
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "undefined undefined",
+        "time" : {
+          "start" : 1586088825128,
+          "stop" : 1586088825140,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testClass",
+    "value" : "login page feature test"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify login page title"
+  }, {
+    "name" : "package",
+    "value" : "login page feature test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-10.0.18362"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ed7be12e91374391.json",
+  "parameterValues" : [ "Chrome-10.0.18362" ]
+}
