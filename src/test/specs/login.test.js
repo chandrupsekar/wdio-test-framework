@@ -19,7 +19,7 @@ describe('login page feature test', function(){
         //test case to verify the sign up link
     it('verify sign up link', function(){
         browser.url('/')
-       assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
+        assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
     })
         //test case to login into the page
     it('verify login', function(){
