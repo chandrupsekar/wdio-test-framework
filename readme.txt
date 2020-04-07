@@ -19,9 +19,9 @@
 
     - go to wdio.config and add this to beforeTest
         -
-        beforeTest: function () {//remove parameters from function()
+        beforeTest: function (test, context) {
             const chai = require('chai')
-            const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
+            const chaiWebdriver = require('chai-webdrdiverio').default
             chai.use(chaiWebdriver(browser))
 
             global.assert = chai.assert
@@ -84,15 +84,18 @@
                     }
                 }
                 
-=> To rerun failed test
-    - put this.retries(2) at describe level in the js file
+=> To rerun test
+    - put this.retries(2) at describe level in the js file use function() keyword and not the arrow notation ( )=>
     - For eg :- 
-        describe('login page feature test', ()=>{
+        describe('login page feature test', function(){
             this.retries(2)
-                it('verify sign up link test', ()=>{
+                it('verify sign up link test', function(){
                 assert.equal(true, loginPage.isSignUpLinkExist, 'SignUp link is not present')
             })
         })
+
+    - Or in wdio.conf.js file inside the mochOpts block 
+        - put retries: 4
 
 
 
@@ -107,32 +110,23 @@
 
     - git push origin master (git push -u origin master) // to push the committed files to the github repository if you use (-u)flag it will remember your preferences for remote and brnch and you can simply use the command git push next time
 
-    - git pull origin master // to pull the files from github to your local repository
+    - git pull origin master // to pul the files from github to your local repository
 
-    => other git commands
-
-        - git branch -r // it shows the branches
-                -if you are not able to see all branches by using this, try to update the repository
-                    - I used git remote set-url https://github.com/chandrupsekar/wdio-test-framework  // to set the remote again
-                        and then I was able to see all the branches in my local repository
-
-        - git checkout branch_name  //it moves to the branch
-        - git push origin branch_name // to push to a particular branch
-
-<<<<<<< HEAD
     
-=> how to add a excel sheet to framework
-	-add the below dependency to existing package.json file 
-	"dependencies": {
-   	 "xlsx": "^0.15.6"
-  	}
+=> working with node-any-jdbc
+    - Although it is not necessary, but before you install the windows specific build tools, make sure you uninstall other `microsoft visual c++ 2005 redistributable` software from the machine. You can install it afterwards if require a specific version for other purpose.
 
-	-next on terminal execute npm install xlsx
-	it will update node_modules and package-lock-json automatically
+    - 💡 [Windows Vista / 7 only] requires .NET Framework 4.5.1 (Currently not installed automatically by this package) Download and install it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=40773)
 
-	-if you want to just execute the sheet then run node sheetname
-	
-||||||| merged common ancestors
-    
-=======
->>>>>>> master
+    - Install all the required tools and configurations using Microsoft's windows-build-tools from an elevated PowerShell or CMD.exe (run as Administrator).
+
+    - Note: If you are behind a
+     specific corporate proxy, then you need to set some environment variables: ` setx NODE_TLS_REJECT_UNAUTHORIZED 0 `
+
+    - npm install -g node-gyp
+
+    - npm install -g --add-python-to-path --production windows-build-tools
+
+    -  Wait for build tool to be installed and once done exit from that shell, launch another elevated PowerShell or CMD.exe (run as Administrator)
+
+    - npm config set msvs_version 2015
