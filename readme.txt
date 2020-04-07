@@ -35,7 +35,9 @@
     - go to package.json file
         add this to the scripts "test": "wdio", //wdio is the command it will look for wdio itself in the command
 
-
+=> Before running the command for testing 'npm test' ensure :
+   - chrome driver is set command (npm install chromedriver --save-dev)
+   - allure report is installed (npm install -g allure-commandline --save-dev)
 
 => To create test suites
 
