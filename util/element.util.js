@@ -28,6 +28,15 @@ class ElementUtil{
     )
         return browser.getTitle()
     }
+
+    doScrollIntoView(element){        //scroll into viewport
+        element.scrollIntoView()
+    }
+   
+    moveToElement(element){              //method to scroll element into view, if not visible
+        element.waitForDisplayed()
+        element.moveTo()
+    }
 }
 
 module.exports  = new ElementUtil()
