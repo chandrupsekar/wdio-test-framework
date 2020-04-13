@@ -5,16 +5,20 @@ const loginPageElements = require('../elements/loginpage.elements')
 class LoginPage {
     
     //Page actions to perfom on the page
-    getPageTitle() {
-        return elementUtil.doGetPageTitle(constants.LOGIN_PAGE_TITLE)
+    PageTitle() {
+        return elementUtil.getPageTitle(constants.LOGIN_PAGE_TITLE)
     }
     isSignUpLinkExist() {
-        return elementUtil.doIsDisplayed(loginPageElements.signUpLink)
+        return elementUtil.isElementDisplayed(loginPageElements.signUpLink)
     }
     doLogin(emailID, pwd) {
         elementUtil.doSetValue(loginPageElements.username, emailID)
         elementUtil.doSetValue(loginPageElements.password, pwd)
-        elementUtil.doClick(loginPageElements.loginBtn)
+        elementUtil.clickElement(loginPageElements.loginBtn)
     }
+    clickOnCheckBox(){
+        browser.pause(5000)
+        elementUtil.clickElement(loginPageElements.clickableCheckBoxElement)
+    }  
 }
 module.exports = new LoginPage()

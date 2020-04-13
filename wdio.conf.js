@@ -1,3 +1,4 @@
+const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
 exports.config = {
     //
     // ====================
@@ -48,17 +49,19 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
     capabilities: [{
-        browserName: 'firefox',
-    //    browserVersion: '74.0 ',
-    //     //name: 'login.test',
-    //     //build: process.env.BUILD_NUMBER
-    },{
-        browserName: 'chrome',
+        browserName: BROWSER_PROPERTIES.browserName,
+    }
+    //     browserName: 'firefox',
+    // //    browserVersion: '74.0 ',
+    // //     //name: 'login.test',
+    // //     //build: process.env.BUILD_NUMBER
+    // },{
+    //     browserName: 'chrome',
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
         //build: process.env.BUILD_NUMBER
-    }
+    
     // ,{
     //     browserName: 'internet explorer',
     //     browserVersion: '11.0',
@@ -105,7 +108,8 @@ exports.config = {
     baseUrl: 'https://app.hubspot.com/login',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
+    waitForInterval: 2000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -191,8 +195,11 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+        browser.url('/')
+        browser.maximizeWindow()
+        browser.pause(30000)
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
