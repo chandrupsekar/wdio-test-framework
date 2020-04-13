@@ -8,14 +8,14 @@ class DashboardPage {
     
     //Page actions to perfom on the page
     getPageTitle() {
-        return elementUtil.doGetPageTitle(constants.DASHBOARD_PAGE_TITLE)
+        return elementUtil.getPageTitle(constants.DASHBOARD_PAGE_TITLE)
     }
     scrollClickElement() {
         loginPage.doLogin(configData.username,configData.password)
         browser.pause(10000)
-        elementUtil.doScrollIntoView(dashboardPageElements.createDealElement)
+        elementUtil.scrollElementIntoView(dashboardPageElements.createDealElement)
         //dashboardPage.moveToElement(dashboardPageElements.createDealElement)
-        elementUtil.doClick(dashboardPageElements.createDealElement)
+        elementUtil.clickElement(dashboardPageElements.createDealElement)
     }
 }
 module.exports = new DashboardPage()

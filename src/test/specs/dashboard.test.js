@@ -2,9 +2,9 @@
 const dashboardPage = require('../../pages/dashboard.page')
 const constants = require('../../../config/constants')
 
-describe('login page feature test', function(){
+describe('Dashboard page feature test', function(){
     it('scrollview', function(){
-        browser.url('/');
+        //browser.url('/');
         dashboardPage.scrollClickElement()
         browser.pause(5000)
         const title = browser.getTitle();
