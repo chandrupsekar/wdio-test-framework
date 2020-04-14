@@ -86,15 +86,18 @@
                     }
                 }
                 
-=> To rerun failed test
-    - put this.retries(2) at describe level in the js file
+=> To rerun test
+    - put this.retries(2) at describe level in the js file use function() keyword and not the arrow notation ( )=>
     - For eg :- 
-        describe('login page feature test', ()=>{
+        describe('login page feature test', function(){
             this.retries(2)
-                it('verify sign up link test', ()=>{
+                it('verify sign up link test', function(){
                 assert.equal(true, loginPage.isSignUpLinkExist, 'SignUp link is not present')
             })
         })
+
+    - Or in wdio.conf.js file inside the mochOpts block 
+        - put retries: 4
 
 
 
@@ -112,3 +115,20 @@
     - git pull origin master // to pul the files from github to your local repository
 
     
+=> working with node-any-jdbc
+    - Although it is not necessary, but before you install the windows specific build tools, make sure you uninstall other `microsoft visual c++ 2005 redistributable` software from the machine. You can install it afterwards if require a specific version for other purpose.
+
+    - 💡 [Windows Vista / 7 only] requires .NET Framework 4.5.1 (Currently not installed automatically by this package) Download and install it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=40773)
+
+    - Install all the required tools and configurations using Microsoft's windows-build-tools from an elevated PowerShell or CMD.exe (run as Administrator).
+
+    - Note: If you are behind a
+     specific corporate proxy, then you need to set some environment variables: ` setx NODE_TLS_REJECT_UNAUTHORIZED 0 `
+
+    - npm install -g node-gyp
+
+    - npm install -g --add-python-to-path --production windows-build-tools
+
+    -  Wait for build tool to be installed and once done exit from that shell, launch another elevated PowerShell or CMD.exe (run as Administrator)
+
+    - npm config set msvs_version 2015

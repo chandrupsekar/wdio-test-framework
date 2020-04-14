@@ -1,10 +1,10 @@
-const elementUtil = require('../../util/elementUtil')
+const elementUtil = require('../../util/element.util')
 const constants  = require('../../config/constants')
 const loginPageElements = require('../elements/loginpage.elements')
 
 class LoginPage {
     
-    //page actions:
+    //Page actions to perfom on the page
     getPageTitle() {
         return elementUtil.doGetPageTitle(constants.LOGIN_PAGE_TITLE)
     }

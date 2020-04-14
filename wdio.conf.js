@@ -38,26 +38,40 @@ exports.config = {
     // files and you set maxInstances to 10, all spec files will get tested at the same time
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
-    //
+    // 
     maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
     
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
+    //To execute tests parallel use name of tests 
+    //Update capabilities for different browsers 
+     capabilities: [{
+        browserName: 'firefox',
+        browserVersion: '74.0 ',
+    //     //name: 'login.test',
+    //     //build: process.env.BUILD_NUMBER
+    },{
         browserName: 'chrome',
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+        browserVersion: 'latest',
+        //maxInstances: 2
+        //name: 'verify login page title',
+        //build: process.env.BUILD_NUMBER
+    }
+    // ,{
+    //     browserName: 'internet explorer',
+    //     browserVersion: '11.0',
+    //    // build: process.env.BUILD_NUMBER
+    //  },{
+    //     browserName: 'safari',
+    //     browserVersion: '6',
+    //     //build: process.env.BUILD_NUMBER
+    // }
+],
+
+
     //
     // ===================
     // Test Configurations
@@ -89,10 +103,10 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://app.hubspot.com/login',
+    baseUrl: 'https://app.hubspot.com',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 20000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -101,11 +115,15 @@ exports.config = {
     // Default request retries count
     connectionRetryCount: 3,
     //
+
+
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: ['selenium-standalone'], //'sauce'
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -124,7 +142,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: [['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
  
     //
     // Options to be passed to Mocha.
@@ -146,8 +164,9 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPreponPrepare: function (config, capabilities) {
+    
+    },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -194,7 +213,7 @@ exports.config = {
      */
     beforeTest: function (test, context) {
         const chai = require('chai')
-            const chaiWebdriver = require('chai-webdriverio').default
+            const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
             chai.use(chaiWebdriver(browser))
 
             global.assert = chai.assert
