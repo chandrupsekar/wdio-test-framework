@@ -145,3 +145,4 @@
         Under Jenkins->Global Tool Configuration->Allure Commandline enter the allure commands
         allure generate
     -   For configuring allure report Under Post Build Actions –> Allure Report
+    -   For enabling choice options install choice option plugin and configure build with build parameters
