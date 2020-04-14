@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1586503592004' stop='1586503652061'>
+    <name>contacts page test</name>
+    <title>contacts page test</title>
+    <test-cases>
+        <test-case start='1586503592005' status='broken' stop='1586503652055'>
+            <name>creating a new contact</name>
+            <title>creating a new contact</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586503592055' status='passed' stop='1586503596583'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503596598' status='passed' stop='1586503596605'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503596623' status='passed' stop='1586503596625'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503597130' status='passed' stop='1586503597132'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503597620' status='passed' stop='1586503597622'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503598131' status='passed' stop='1586503598134'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503598629' status='passed' stop='1586503598631'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503599120' status='passed' stop='1586503599121'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503599620' status='passed' stop='1586503599621'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503600120' status='passed' stop='1586503600122'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503600620' status='passed' stop='1586503600621'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503601119' status='passed' stop='1586503601121'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586503601620' status='passed' stop='1586503601621'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (G:\javascript automation\New folder\wdio-test-framework\src\test\specs\contacts.test.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (G:\javascript automation\New folder\wdio-test-framework\src\test\specs\contacts.test.js)
+                    at Test.Runnable._timeoutError (G:\javascript automation\New folder\wdio-test-framework\node_modules\mocha\lib\runnable.js:463:10)
+                    at Timeout.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\node_modules\mocha\lib\runnable.js:267:24)
+                    at listOnTimeout (internal/timers.js:549:17)
+                    at processTimers (internal/timers.js:492:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

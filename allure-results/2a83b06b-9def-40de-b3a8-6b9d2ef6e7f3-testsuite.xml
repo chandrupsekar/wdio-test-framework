@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1586836904474' stop='1586836910522'>
+    <name>contacts page test</name>
+    <title>contacts page test</title>
+    <test-cases>
+        <test-case start='1586836904474' status='broken' stop='1586836910520'>
+            <name>logging using mysql datasource</name>
+            <title>logging using mysql datasource</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586836904530' status='passed' stop='1586836910374'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'username' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'username' of undefined
+                    at Context.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\src\test\specs\contacts.test.js:25:34)
+                    at Context.executeSync (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\index.js:56:18)
+                    at G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

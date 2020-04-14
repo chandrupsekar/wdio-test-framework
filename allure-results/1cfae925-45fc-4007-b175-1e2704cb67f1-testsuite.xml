@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1586753953008' stop='1586753953223'>
+    <name>contacts page test</name>
+    <title>contacts page test</title>
+    <test-cases>
+        <test-case start='1586753953008' status='broken' stop='1586753953221'>
+            <name>creating a new contact</name>
+            <title>creating a new contact</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586753953193' status='broken' stop='1586753953221'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element.setValue is not a function</message>
+                <stack-trace>TypeError: element.setValue is not a function
+                    at ElementUtil.doSetValue (G:\javascript automation\New folder\wdio-test-framework\util\element.util.js:15:17)
+                    at LoginPage.doLogin (G:\javascript automation\New folder\wdio-test-framework\src\pages\login.page.js:17:21)
+                    at ContactsPage.createNewContact (G:\javascript automation\New folder\wdio-test-framework\src\pages\contacts.page.js:17:15)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Context.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\src\test\specs\contacts.test.js:15:9)
+                    at async Context.executeAsync (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\shim.js:123:12)
+                    at async Context.testFrameworkFnWrapper (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:57:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

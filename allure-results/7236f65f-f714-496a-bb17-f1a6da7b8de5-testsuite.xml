@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1586743291704' stop='1586743295388'>
+    <name>contacts page test</name>
+    <title>contacts page test</title>
+    <test-cases>
+        <test-case start='1586743291705' status='broken' stop='1586743295386'>
+            <name>creating a new contact</name>
+            <title>creating a new contact</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586743291759' status='broken' stop='1586743295386'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Navigation failed because browser has disconnected!</message>
+                <stack-trace>Navigation failed because browser has disconnected!
+                    at Frame.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\node_modules\puppeteer-core\lib\helper.js:111:15)
+                    at Page.goto (G:\javascript automation\New folder\wdio-test-framework\node_modules\puppeteer-core\lib\Page.js:672:49)
+                    at Page.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\node_modules\puppeteer-core\lib\helper.js:112:23)
+                    at DevToolsDriver.navigateTo (G:\javascript automation\New folder\wdio-test-framework\node_modules\webdriverio\node_modules\devtools\build\commands\navigateTo.js:13:14)
+                    at Browser.wrappedCommand (G:\javascript automation\New folder\wdio-test-framework\node_modules\webdriverio\node_modules\devtools\build\devtoolsdriver.js:92:47)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Browser.runCommandWithHooks (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Context.&lt;anonymous> (G:\javascript automation\New folder\wdio-test-framework\src\test\specs\contacts.test.js:12:17)
+                    at Context.executeSync (G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\index.js:56:18)
+                    at G:\javascript automation\New folder\wdio-test-framework\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

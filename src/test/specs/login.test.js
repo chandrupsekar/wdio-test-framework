@@ -28,13 +28,13 @@ describe('login page feature test', function(){
         //sample line 
         loginPage.doLogin(configData.username, configData.password)
     })
-     it('get data from sheet',function(){
-        var wb=sheetData.getExcelSheetName()
-        var ws=wb.Sheets["marks"];
-        var data=xslx.utils.sheet_to_json(ws);     //this line convert sheet data into array of json objects.
-        console.log(data[1]);
-        console.log(wb.SheetNames);
-        console.log(data); 
-    })
+    //  it('get data from sheet',function(){
+    //     var wb=sheetData.getExcelSheetName()
+    //     var ws=wb.Sheets["marks"];
+    //     var data=xslx.utils.sheet_to_json(ws);     //this line convert sheet data into array of json objects.
+    //     console.log(data[1]);
+    //     console.log(wb.SheetNames);
+    //     console.log(data); 
+    // })
 })
 

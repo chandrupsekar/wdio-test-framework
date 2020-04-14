@@ -49,13 +49,13 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
      capabilities: [{
-        browserName: 'firefox',
-        browserVersion: '74.0 ',
+        //browserName: 'firefox',
+        //browserVersion: '74.0 ',
     //     //name: 'login.test',
     //     //build: process.env.BUILD_NUMBER
-    },{
+    //},{
         browserName: 'chrome',
-        browserVersion: 'latest',
+        //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
         //build: process.env.BUILD_NUMBER
@@ -123,7 +123,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'], //'sauce'
+    services: ['chromedriver'], //'sauce'
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -215,7 +215,6 @@ exports.config = {
         const chai = require('chai')
             const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
             chai.use(chaiWebdriver(browser))
-
             global.assert = chai.assert
             global.expect = chai.expect
             global.should = chai.should
@@ -235,11 +234,11 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
-        if (!passed) {
-            browser.takeScreenshot();
-        }
-    },
+    //afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //    if (!passed) {
+    //        browser.takeScreenshot();
+     //   }
+    //},
 
 
     /**

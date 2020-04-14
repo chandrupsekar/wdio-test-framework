@@ -4,5 +4,5 @@ module.exports ={
     database    : 'freecrm',
     user        : 'root',
     password    : 'Gtyhnbvfr@1',
-
+    tableName   : 'contact'
 }
