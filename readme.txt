@@ -35,7 +35,9 @@
     - go to package.json file
         add this to the scripts "test": "wdio", //wdio is the command it will look for wdio itself in the command
 
-
+=> Before running the command for testing 'npm test' ensure :
+   - chrome driver is set command (npm install chromedriver --save-dev)
+   - allure report is installed (npm install -g allure-commandline --save-dev)
 
 => To create test suites
 
@@ -130,3 +132,16 @@
     -  Wait for build tool to be installed and once done exit from that shell, launch another elevated PowerShell or CMD.exe (run as Administrator)
 
     - npm config set msvs_version 2015
+
+=> To configure Jenkins
+    -	If the repository is private generate SSH key and add it to Jenkins Under Credentials (Jenkins->Credentials->Add Credentials)
+    -   Add the public ssh key under SSH Key 
+    -   Configure Jenkins for shell under Jenkins-> Jenkins > Configure System Shell and point it to the location of sh.exe file found in their installation.
+    -   Configure Jenkins for Git under Jenkins-> Jenkins > Configure Git Installation and point it to the location of git.exe file found in their installation.
+    - 	For building node js applications Build->ExecuteShell. Enter the node js commands as like below
+        npm install
+        npm test
+    -	Allure Report . To configure Allure report install the necessary plugins first by Manage Jenkins->Install Plugin
+        Under Jenkins->Global Tool Configuration->Allure Commandline enter the allure commands
+        allure generate
+    -   For configuring allure report Under Post Build Actions –> Allure Report
