@@ -1,0 +1,282 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1586922057355' stop='1586922084199'>
+    <name>login page feature test</name>
+    <title>login page feature test</title>
+    <test-cases>
+        <test-case start='1586922057356' status='passed' stop='1586922076704'>
+            <name>verify login page title</name>
+            <title>verify login page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586922057401' status='passed' stop='1586922062799'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922062826' status='passed' stop='1586922062834'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922063305' status='passed' stop='1586922063307'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922063803' status='passed' stop='1586922063805'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922064407' status='passed' stop='1586922064409'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922064806' status='passed' stop='1586922064807'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922065305' status='passed' stop='1586922065306'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922065804' status='passed' stop='1586922065805'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922066304' status='passed' stop='1586922066306'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922066806' status='passed' stop='1586922066807'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922067318' status='passed' stop='1586922067320'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922067803' status='passed' stop='1586922067805'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922076659' status='passed' stop='1586922076664'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922076691' status='passed' stop='1586922076701'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1586922076705' status='passed' stop='1586922081058'>
+            <name>verify sign up link</name>
+            <title>verify sign up link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586922076716' status='passed' stop='1586922077882'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922077892' status='passed' stop='1586922077899'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922077916' status='passed' stop='1586922077923'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922080992' status='passed' stop='1586922081018'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922081038' status='passed' stop='1586922081048'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922081052' status='passed' stop='1586922081057'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1586922081058' status='passed' stop='1586922084198'>
+            <name>verify login</name>
+            <title>verify login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.18362'/>
+            </parameters>
+            <steps>
+                <step start='1586922081061' status='passed' stop='1586922082083'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922082100' status='passed' stop='1586922082112'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922082141' status='passed' stop='1586922082165'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922083294' status='passed' stop='1586922083339'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922083402' status='passed' stop='1586922083447'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1586922083454' status='undefined'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1586922083462' status='passed' stop='1586922083465'>
+                            <name>undefined undefined</name>
+                            <title>undefined undefined</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1586922083481' status='undefined'>
+                            <name>undefined undefined</name>
+                            <title>undefined undefined</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1586922083485' status='passed' stop='1586922083494'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083510' status='passed' stop='1586922083514'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083525' status='passed' stop='1586922083908'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083911' status='passed' stop='1586922083913'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083918' status='passed' stop='1586922083923'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083926' status='passed' stop='1586922083930'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922083935' status='passed' stop='1586922084104'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922084107' status='passed' stop='1586922084109'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922084116' status='passed' stop='1586922084121'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1586922084124' status='passed' stop='1586922084197'>
+                                    <name>undefined undefined</name>
+                                    <title>undefined undefined</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

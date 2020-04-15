@@ -8,26 +8,27 @@ const configData = require('../../config/config')
 const homePageElements = require('../elements/homepage.elements')
 class ContactsPage{
     createNewContact = async (tableName)=>{
-        elementUtil.doClick(homePageElements.contactLink) //$('#nav-primary-contacts-branch').waitForDisplayed({ timeout: 60000 }) $('#nav-primary-contacts-branch').click()
-        elementUtil.doClick(homePageElements.secondaryContact)//$('#nav-secondary-contacts').waitForDisplayed({ timeout: 60000 })  $('#nav-secondary-contacts').click()
-        elementUtil.doClick(contactspageElements.newContactLink)//$('div.add-control button').waitForDisplayed({ timeout: 60000 }) $('div.add-control button').click()
+        // elementUtil.doClick(homePageElements.contactLink) //$('#nav-primary-contacts-branch').waitForDisplayed({ timeout: 60000 }) $('#nav-primary-contacts-branch').click()
+        // elementUtil.doClick(homePageElements.secondaryContact)//$('#nav-secondary-contacts').waitForDisplayed({ timeout: 60000 })  $('#nav-secondary-contacts').click()
+        // elementUtil.doClick(contactspageElements.newContactLink)//$('div.add-control button').waitForDisplayed({ timeout: 60000 }) $('div.add-control button').click()
         var arr = [];
-        var arr = db.retrieve(dbConfig.tableName)
+        arr = await db.retrieve(configData.tableName)
 
-        await db.retrieve(dbConfig.tableName).then(result=>{
-            //console.log(result)
-            arr = result;
-            console.log(result.username + ' '+ result.firstname + ' ' + result.lastname)
-            elementUtil.doSetValue(contactspageElements.userName, JSON.stringify(result[0].username))//$('[data-selenium-test="property-input-email"]').waitForDisplayed({ timeout: 60000 }) $('[data-selenium-test="property-input-email"]').setValue(result.username)
-            elementUtil.doSetValue(contactspageElements.firstName, JSON.stringify(result[0].firstname))//$('[data-selenium-test="property-input-firstname"]').waitForDisplayed({ timeout: 60000 }) $('[data-selenium-test="property-input-firstname"]').setValue(result.firstname)
-            elementUtil.doSetValue(contactspageElements.lastName, JSON.stringify(result[0].lastname))//$('[data-selenium-test="property-input-lastname"]').waitForDisplayed({ timeout: 60000 })$('[data-selenium-test="property-input-lastname"]').setValue(result.lastname)
-        })
-        console.log('arr: ' + arr)
-        elementUtil.doClick(  contactspageElements.createContactButton ); //$("[data-selenium-test='base-dialog-confirm-btn']").waitForDisplayed({ timeout: 60000 })$("[data-selenium-test='base-dialog-confirm-btn']").click()
-        browser.pause(10000)
-        elementUtil.doClick(homePageElements.contactLink)//$('#nav-primary-contacts-branch').click()
-        elementUtil.doClick(homePageElements.secondaryContact) //$('#nav-secondary-contacts').click()
-        browser.pause(20000)      
+        // await db.retrieve(dbConfig.tableName).then(result=>{
+        //     //console.log(result)
+        //     arr = result;
+        //     console.log(result.username + ' '+ result.firstname + ' ' + result.lastname)
+        //     elementUtil.doSetValue(contactspageElements.userName, JSON.stringify(result[0].username))//$('[data-selenium-test="property-input-email"]').waitForDisplayed({ timeout: 60000 }) $('[data-selenium-test="property-input-email"]').setValue(result.username)
+        //     elementUtil.doSetValue(contactspageElements.firstName, JSON.stringify(result[0].firstname))//$('[data-selenium-test="property-input-firstname"]').waitForDisplayed({ timeout: 60000 }) $('[data-selenium-test="property-input-firstname"]').setValue(result.firstname)
+        //     elementUtil.doSetValue(contactspageElements.lastName, JSON.stringify(result[0].lastname))//$('[data-selenium-test="property-input-lastname"]').waitForDisplayed({ timeout: 60000 })$('[data-selenium-test="property-input-lastname"]').setValue(result.lastname)
+        // })
+        // console.log('arr: ')
+        // console.log(arr)
+        // elementUtil.doClick(  contactspageElements.createContactButton ); //$("[data-selenium-test='base-dialog-confirm-btn']").waitForDisplayed({ timeout: 60000 })$("[data-selenium-test='base-dialog-confirm-btn']").click()
+        // browser.pause(10000)
+        // elementUtil.doClick(homePageElements.contactLink)//$('#nav-primary-contacts-branch').click()
+        // elementUtil.doClick(homePageElements.secondaryContact) //$('#nav-secondary-contacts').click()
+        // browser.pause(20000)      
     }
 }
 module.exports = new ContactsPage()

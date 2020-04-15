@@ -10,17 +10,9 @@ const db   = require('../../../util/database.util')
 describe('contacts page test', async function(){
     it('creating a new contact ', async function(){
         browser.url('/')
-        login.doLogin(configData.username, configData.password)
-        var arr = [];
-        try{
-            await db.retrieve('contact').then(result=>{
-                arr = result
-            }).catch(err=>{
-                console.log(err)
-            })
-        }catch(err){
-            console.log(err)
-        }
+        //login.doLogin(configData.username, configData.password)
+        //var arr = [];
+        contacts.createNewContact(configData.tableName)
     })
 })
 

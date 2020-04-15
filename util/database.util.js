@@ -15,33 +15,19 @@ class Database {
     
     retrieve = async function(tableName){
         const connection = this.getConnection()
-        connection.connect()
+        connection.connect()       
         try{
             return new Promise((resolve, reject)=>{
-                connection.query(`select * from ${tableName}`, function(err, result){
-                    connection.end()
-                    if(!err){ resolve(result) 
-                    }else{reject(err)}
+                connection.query(`select * from ${tableName}`, (err, result)=>{
+                    if(err) reject(err)
+                    else resolve(result)
                 })
-            })
+            }).then(arr =>{resolve.send(arr)})
         }catch(err){
             console.log(err)
         }
     }
 
-    // fetch = async tableName=>{
-    //     try{
-    //         await retrieve(dbConfig.tableName).then(result=>{
-    //             arr = result
-    //         })       
-    //     }catch(err){
-    //         console.log(err)
-    //     }
-    //     console.log('arr inside fetch')
-    //     console.log(arr)
-    //     return arr
-    // }
-    
     insert(tableName, values){
         const connection = this.getConnection()
         connection.connect()
