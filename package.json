@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/chandrupsekar/wdio-test-framework.git"
   },
-  "author": "pavan",
+  "author": "TCS",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chandrupsekar/wdio-test-framework/issues"
