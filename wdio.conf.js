@@ -52,11 +52,17 @@ exports.config = {
         browserName: BROWSER_PROPERTIES.browserName,
     }
     //     browserName: 'firefox',
+  //  'moz:firefoxOptions': {         //for headless browser
+   //     args: ['-headless']
+   // }
     // //    browserVersion: '74.0 ',
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
     // },{
     //     browserName: 'chrome',
+   // 'goog:chromeOptions': {            //for headless browser
+     //   args: ['--headless', '--disable--gpu'],
+     // }
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
