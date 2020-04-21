@@ -18,8 +18,12 @@ class LoginPage {
         elementUtil.doSetValue(loginPageElements.password,  pwd)
         elementUtil.doClick(loginPageElements.loginBtn)
     }
-    clickOnCheckBox(){
-        elementUtil.doClick(loginPageElements.clickableCheckBoxElement)
+    clickOnCheckBox(element){
+        if(!isCheckboxSelected)
+            elementUtil.doClick(loginPageElements.clickableCheckBoxElement)
     } 
+    isCheckboxSelected(element){
+        return element.isElementSelected()
+    }
 }
 module.exports = new LoginPage()

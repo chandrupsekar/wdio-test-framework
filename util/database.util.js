@@ -24,13 +24,20 @@ class Database {
         })
         return connection;
     }
-
-    retrieve(tableName, fn){
-        var connection =  this.getConnection()
-        connection.query(`select * from ${tableName}`, (err, result)=>{
-            connection.end()
-            console.log(result)
-        })
+    
+    retrieve = async function(tableName){
+        const connection = this.getConnection()
+        connection.connect()       
+        try{
+            return new Promise((resolve, reject)=>{
+                connection.query(`select * from ${tableName}`, (err, result)=>{
+                    if(err) reject(err)
+                    else resolve(result)
+                })
+            }).then(arr =>{resolve.send(arr)})
+        }catch(err){
+            console.log(err)
+        }
     }
     
     // retrieve = async function(tableName){
@@ -81,6 +88,20 @@ class Database {
     // }
     // getMongoConnection(){
     // }
+    insert(tableName, values){
+        const connection = this.getConnection()
+        connection.connect()
+        var query = connection.query(`insert into ${tableName} set ${value}`,(err, result)=>{
+            if(err){
+                console.error(err)
+            }else{
+                console.log(result)
+            }
+        })
+        connection.end()
+    }
+    getMongoConnection(){
+    }
 }
 module.exports = new Database()
             

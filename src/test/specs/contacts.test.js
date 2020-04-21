@@ -10,8 +10,9 @@ const db   = require('../../../util/database.util')
 describe('contacts page test',  function(){
     it('creating a new contact ',  function(){
         browser.url('/')
-        login.doLogin(configData.username, configData.password)
-        contacts.createNewContact('contact')
+        //login.doLogin(configData.username, configData.password)
+        //var arr = [];
+        contacts.createNewContact(configData.tableName)
     })
 })
 // var arr = [];
