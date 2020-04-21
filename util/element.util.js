@@ -15,6 +15,7 @@ class ElementUtil{
     doSetValue(element, value){        
         element.waitForDisplayed()
         element.setValue(value)
+        // console.log('exiting')
     }
 
     // doGetText(element){           //method to get text from an element
@@ -37,8 +38,7 @@ class ElementUtil{
     getPageTitle(pageTitle){          
         browser.waitUntil(function(){
             return (browser.getTitle() === pageTitle)
-        }, 15000, 'title is not displayed after the given time'
-    )
+        }, 60000, 'title is not displayed after the given time')
         return browser.getTitle()
     }
 
