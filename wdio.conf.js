@@ -49,8 +49,8 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
     capabilities: [{
-        browserName: BROWSER_PROPERTIES.browserName,
-    }
+    //    browserName: BROWSER_PROPERTIES.browserName,
+    //}
     //     browserName: 'firefox',
   //  'moz:firefoxOptions': {         //for headless browser
    //     args: ['-headless']
@@ -59,10 +59,10 @@ exports.config = {
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
     // },{
-    //     browserName: 'chrome',
-   // 'goog:chromeOptions': {            //for headless browser
-     //   args: ['--headless', '--disable--gpu'],
-     // }
+         browserName: 'chrome',
+        'goog:chromeOptions': {            //for headless browser
+        args: ['--headless', '--disable--gpu'],
+      }
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
@@ -76,7 +76,7 @@ exports.config = {
     //     browserName: 'safari',
     //     browserVersion: '6',
     //     //build: process.env.BUILD_NUMBER
-    // }
+     }
 ],
 
 
@@ -152,6 +152,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+ 
  
     //
     // Options to be passed to Mocha.
@@ -249,7 +250,7 @@ exports.config = {
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.takeScreenshot();
-        }
+            }
     },
 
 
