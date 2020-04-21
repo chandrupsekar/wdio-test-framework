@@ -30,12 +30,6 @@ class Database {
         connection.query(`select * from ${tableName}`, (err, result)=>{
             connection.end()
             console.log(result)
-            if(err){
-                console.log(err)
-            }
-            else{
-                fn(result) 
-            }
         })
     }
     
