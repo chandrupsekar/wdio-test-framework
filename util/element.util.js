@@ -6,13 +6,20 @@ class ElementUtil{
         element.waitForDisplayed({ timeout: 60000 })
         element.click()
     }
-
+    // doPromiseSetValue = async function(element, value){
+    //     console.log('inside doPromiseSetValue')
+    //     await element.then(result=>{
+    //         console.log(typeof result)
+    //         result.waitForDisplayed({ timeout: 60000 })
+    //         result.setValue(value)
+    //     })
+    // }
     doSetValue(element, value){   
-        // console.log('entered doSet')     //method to enter text into a field
-        // console.log('value type' + typeof value)
-        // console.log(element)
-        // console.log('type of element' + typeof element)
-        element.waitForDisplayed({ timeout: 60000 })
+        console.log('entered doSet')     //method to enter text into a field
+        console.log('value type ' + typeof value)
+        console.log(element)
+        console.log('type of element' + typeof element)
+        // element.waitForDisplayed({ timeout: 60000 })
         element.setValue(value)
         // console.log('exiting')
     }
