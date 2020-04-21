@@ -7,15 +7,24 @@ const loginPageElements = require('../../elements/loginpage.elements')
 const loginPage = require('../../pages/login.page')
 const db   = require('../../../util/database.util')
 
-describe('contacts page test', async function(){
-    it('creating a new contact ', async function(){
+describe('contacts page test',  function(){
+    it('creating a new contact ',  function(){
         browser.url('/')
         //login.doLogin(configData.username, configData.password)
         //var arr = [];
         contacts.createNewContact(configData.tableName)
     })
 })
-
+// var arr = [];
+        // try{
+        //     await db.retrieve('contact').then(result=>{
+        //         arr = result
+        //     }).catch(err=>{
+        //         console.log(err)
+        //     })
+        // }catch(err){
+        //     console.log(err)
+        // }
 /*
 it('logging using mysql datasource', async function(){
     browser.url('/')
