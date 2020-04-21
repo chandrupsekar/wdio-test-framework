@@ -1,3 +1,4 @@
+const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
 exports.config = {
     //
     // ====================
@@ -34,32 +35,39 @@ exports.config = {
     //
     // First, you can define how many instances should be started at the same time. Let's
     // say you have 3 different capabilities (Chrome, Firefox, and Safari) and you have
-    // set maxInstances to 1; wdio will spawn 3 processes. Therefore, if you have 10 spec
+    // set Instances to 1; wdio will spawn 3 processes. Therefore, if you have 10 spec
     // files and you set maxInstances to 10, all spec files will get tested at the same time
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
-    // 
+    //
     maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
-     capabilities: [{
-        //browserName: 'firefox',
-        //browserVersion: '74.0 ',
-    //     //name: 'login.test',
-    //     //build: process.env.BUILD_NUMBER
-    //},{
-        browserName: 'chrome',
+    capabilities: [{
+        browserName: BROWSER_PROPERTIES.browserName,
+    }
+    //     browserName: 'firefox',
+  //  'moz:firefoxOptions': {         //for headless browser
+   //     args: ['-headless']
+   // }
+    // //    browserVersion: '74.0 ',
+    // //     //name: 'login.test',
+    // //     //build: process.env.BUILD_NUMBER
+    // },{
+    //     browserName: 'chrome',
+   // 'goog:chromeOptions': {            //for headless browser
+     //   args: ['--headless', '--disable--gpu'],
+     // }
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
         //build: process.env.BUILD_NUMBER
-    }
+    
     // ,{
     //     browserName: 'internet explorer',
     //     browserVersion: '11.0',
@@ -103,10 +111,11 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://app.hubspot.com',
+    baseUrl: 'https://app.hubspot.com/login',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 20000,
+    waitforTimeout: 30000,
+    waitForInterval: 2000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -164,9 +173,8 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    onPreponPrepare: function (config, capabilities) {
-    
-    },
+    // onPrepare: function (config, capabilities) {
+    // },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -193,8 +201,11 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+        browser.url('/')
+        browser.maximizeWindow()
+        browser.pause(30000)
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -213,7 +224,7 @@ exports.config = {
      */
     beforeTest: function (test, context) {
         const chai = require('chai')
-            const chaiWebdriver = require('chai-webdriverio').default // or onst chaiWebdriver = require('chai-webdriverio') for later node 5.xs
+            const chaiWebdriver = require('chai-webdriverio').default
             chai.use(chaiWebdriver(browser))
             global.assert = chai.assert
             global.expect = chai.expect

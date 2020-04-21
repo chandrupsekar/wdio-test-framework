@@ -25,21 +25,55 @@ class Database {
         return connection;
     }
     
-    retrieve = async function(tableName){
+    retrieve(){
         const connection = this.getConnection()
-        connection.connect()       
-        try{
-            return new Promise((resolve, reject)=>{
-                connection.query(`select * from ${tableName}`, (err, result)=>{
-                    if(err) reject(err)
-                    else resolve(result)
-                })
-            }).then(arr =>{resolve.send(arr)})
-        }catch(err){
-            console.log(err)
-        }
+        connection.connect();
+        var query= connection.query('select * from articles', function(err, result){
+            if(err){
+                console.log(err)
+                return
+            }
+            console.log(result);
+        })
+        connection.end()
     }
     
+    insert(){
+        const connection = this.getConnection()
+        connection.connect();
+        var article={
+            author : 'Shree Ramchandra',
+            title : 'Node tutorial',
+            body: 'foo bar'
+        }
+        var query = connection.query('insert into articles set ?', article, (err, result)=>{
+            if(err){
+                console.error(err)
+            }else{
+                console.log(result);
+            }
+        })
+        connection.end()
+    }
+
+    insert(tableName, values){
+        const connection = this.getConnection()
+        connection.connect()
+        var query = connection.query(`insert into ${tableName} set ${value}`,(err, result)=>{
+            if(err){
+                console.error(err)
+            }else{
+                console.log(result)
+            }
+        })
+        connection.end()
+    }
+    getMongoConnection(){
+    }
+}
+module.exports = new Database()
+
+
     // retrieve = async function(tableName){
     //     const connection = this.getConnection()
     //     connection.connect()
@@ -88,20 +122,3 @@ class Database {
     // }
     // getMongoConnection(){
     // }
-    insert(tableName, values){
-        const connection = this.getConnection()
-        connection.connect()
-        var query = connection.query(`insert into ${tableName} set ${value}`,(err, result)=>{
-            if(err){
-                console.error(err)
-            }else{
-                console.log(result)
-            }
-        })
-        connection.end()
-    }
-    getMongoConnection(){
-    }
-}
-module.exports = new Database()
-            

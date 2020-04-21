@@ -8,22 +8,23 @@ const sheetData=require('../../../config/sheetconfig')
 
 
 describe('login page feature test', function(){
-        //test case to verify the login page title
+
+        //***test case to verify the login page title***       
     it('verify login page title', function(){
-        browser.url('/')         //launching the browser '/' indicates the base url in wdio.config.js
+        //browser.url('/')         //launching the browser '/' indicates the base url in wdio.config.js
         //browser.maximizeWindown
-        const title = loginPage.getPageTitle()
+        const title = loginPage.PageTitle()
         console.log('login page title is :', title);
         assert.equal(constants.LOGIN_PAGE_TITLE, title, 'title is not found')     //assert helps to compare the actual and expected title
     })
-        //test case to verify the sign up link
+        //***test case to verify the sign up link***
     it('verify sign up link', function(){
-        browser.url('/')
+        //browser.url('/')
         assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
     })
-        //test case to login into the page
+        //***test case to login into the page***
     it('verify login', function(){
-        browser.url('/')
+        //browser.url('/')
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         //sample line 
         loginPage.doLogin(configData.username, configData.password)
@@ -36,5 +37,14 @@ describe('login page feature test', function(){
     //     console.log(wb.SheetNames);
     //     console.log(data); 
     // })
+    //***test to check if checkbox is selected***
+    it('click on checkbox', function(){
+            // browser.url("/");
+            browser.pause(5000);
+            loginPage.clickOnCheckBox();
+            browser.pause(5000);
+            assert.equal(true, loginPageElements.trueCheckBoxElement.isSelected(), 'Checkbox not selected')
+            browser.pause(5000);
+        })
 })
 
