@@ -1,4 +1,4 @@
-//const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
+const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
 global.fs = require('fs')
 require('dotenv').config()
 console.log(process.env.BROWSER_NAME)
@@ -52,15 +52,26 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
     capabilities: [{
+
         //browserName: BROWSER_PROPERTIES.browserName,
-        browserName: process.env.BROWSER_NAME
+        //browserName: process.env.BROWSER_NAME
+    //}
+
+        browserName: BROWSER_PROPERTIES.browserName,
     }
+
     //     browserName: 'firefox',
+  //  'moz:firefoxOptions': {         //for headless browser
+   //     args: ['-headless']
+   // }
     // //    browserVersion: '74.0 ',
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
     // },{
-    //     browserName: 'chrome',
+         browserName: 'chrome',
+        'goog:chromeOptions': {            //for headless browser
+        args: ['--headless', '--disable--gpu'],
+      }
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
@@ -74,7 +85,7 @@ exports.config = {
     //     browserName: 'safari',
     //     browserVersion: '6',
     //     //build: process.env.BUILD_NUMBER
-    // }
+     }
 ],
 
 
@@ -130,7 +141,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'], //'sauce'
+    services: ['chromedriver'], //'sauce'
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -150,6 +161,7 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+ 
  
     //
     // Options to be passed to Mocha.
@@ -224,7 +236,6 @@ exports.config = {
         const chai = require('chai')
             const chaiWebdriver = require('chai-webdriverio').default
             chai.use(chaiWebdriver(browser))
-
             global.assert = chai.assert
             global.expect = chai.expect
             global.should = chai.should
@@ -244,6 +255,7 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
+
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     //     if (!passed) {
     //         browser.takeScreenshot();
@@ -266,6 +278,7 @@ exports.config = {
             browser.saveScreenshot('./reports/ErrorShots/' + screenDate.getTime() +'.png');
         }
     },
+
 
     /**
      * Hook that gets executed after the suite has ended

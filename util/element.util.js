@@ -10,6 +10,7 @@ class ElementUtil{
             return (browser.getTitle() === pageTitle)
         }, 15000, 'title is not displayed after the given time')
         return browser.getTitle()
+
     }
 
     //get page title
@@ -27,6 +28,7 @@ class ElementUtil{
     doSetValue(element, value){        
         element.waitForDisplayed(time)
         element.setValue(value)
+
     }
 
     //Click on an element
