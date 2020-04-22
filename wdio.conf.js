@@ -1,4 +1,7 @@
-const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
+//const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
+global.fs = require('fs')
+require('dotenv').config()
+console.log(process.env.BROWSER_NAME)
 exports.config = {
     //
     // ====================
@@ -49,7 +52,8 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
     capabilities: [{
-        browserName: BROWSER_PROPERTIES.browserName,
+        //browserName: BROWSER_PROPERTIES.browserName,
+        browserName: process.env.BROWSER_NAME
     }
     //     browserName: 'firefox',
     // //    browserVersion: '74.0 ',
@@ -240,12 +244,28 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
-        if (!passed) {
-            browser.takeScreenshot();
+    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //     if (!passed) {
+    //         browser.takeScreenshot();
+    //     }
+    // },
+
+    afterTest(test) {
+        if (!test.passed) {
+            let screenDate = new Date();
+            //console.log(test.context)
+            const mkdirSync = function (dirPath) {
+                try {
+                    fs.mkdirSync(dirPath)
+                } catch (err) {
+                    if (err.code !== 'EEXIST') throw err
+                }
+            };
+            mkdirSync("./reports/ErrorShots/");
+            //getTime() Returns the number of milliseconds since midnight Jan 1 1970, and a specified date
+            browser.saveScreenshot('./reports/ErrorShots/' + screenDate.getTime() +'.png');
         }
     },
-
 
     /**
      * Hook that gets executed after the suite has ended
