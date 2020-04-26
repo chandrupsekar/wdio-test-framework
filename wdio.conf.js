@@ -58,7 +58,7 @@ exports.config = {
     //}
 
         browserName: BROWSER_PROPERTIES.browserName,
-    }
+    }],
 
     //     browserName: 'firefox',
   //  'moz:firefoxOptions': {         //for headless browser
@@ -67,7 +67,7 @@ exports.config = {
     // //    browserVersion: '74.0 ',
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
-    // },{
+    //},{
          browserName: 'chrome',
         'goog:chromeOptions': {            //for headless browser
         args: ['--headless', '--disable--gpu'],
@@ -85,10 +85,8 @@ exports.config = {
     //     browserName: 'safari',
     //     browserVersion: '6',
     //     //build: process.env.BUILD_NUMBER
-     }
-],
-
-
+     //}
+,
     //
     // ===================
     // Test Configurations
