@@ -1,6 +1,14 @@
+  
 node_modules
 allure-report
 allure-results
 package-lock.json
+<<<<<<< HEAD
 .vscode
 Sequelize
+||||||| merged common ancestors
+=======
+.env
+.vscode
+Sequelize
+>>>>>>> 1ef1642e86622804a13e798dc7e16dfe745caef3
