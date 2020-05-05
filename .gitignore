@@ -4,4 +4,4 @@ allure-results
 package-lock.json
 .env
 .vscode
-
+Sequelize
