@@ -1,4 +1,8 @@
 const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
+
+global.fs = require('fs')
+require('dotenv').config()
+console.log(process.env.BROWSER_NAME)
 exports.config = {
     //
     // ====================
@@ -49,8 +53,14 @@ exports.config = {
     //To execute tests parallel use name of tests 
     //Update capabilities for different browsers 
     capabilities: [{
+
+
+        //browserName: BROWSER_PROPERTIES.browserName,
+        //browserName: process.env.BROWSER_NAME
+    //}
+
         browserName: BROWSER_PROPERTIES.browserName,
-    }
+    }],
     //     browserName: 'firefox',
   //  'moz:firefoxOptions': {         //for headless browser
    //     args: ['-headless']
@@ -58,11 +68,12 @@ exports.config = {
     // //    browserVersion: '74.0 ',
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
-    // },{
-    //     browserName: 'chrome',
-   // 'goog:chromeOptions': {            //for headless browser
-     //   args: ['--headless', '--disable--gpu'],
-     // }
+
+    //},{
+         browserName: 'chrome',
+        'goog:chromeOptions': {            //for headless browser
+        args: ['--headless', '--disable--gpu'],
+      }
         //browserVersion: 'latest',
         //maxInstances: 2
         //name: 'verify login page title',
@@ -76,10 +87,8 @@ exports.config = {
     //     browserName: 'safari',
     //     browserVersion: '6',
     //     //build: process.env.BUILD_NUMBER
-    // }
-],
-
-
+     //}
+,
     //
     // ===================
     // Test Configurations
@@ -111,7 +120,9 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+
     baseUrl: '',
+
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 30000,
@@ -170,6 +181,7 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
  
+ 
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -220,7 +232,9 @@ exports.config = {
      */
     before: function (capabilities, specs) {
         browser.url('/')
-        // browser.maximizeWindow()
+
+        browser.maximizeWindow()
+
         browser.pause(30000)
     },
     /**
@@ -262,11 +276,29 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    //afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    //    if (!passed) {
-    //        browser.takeScreenshot();
-     //   }
-    //},
+
+    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //     if (!passed) {
+    //         browser.takeScreenshot();
+    //     }
+    // },
+
+    afterTest(test) {
+        if (!test.passed) {
+            let screenDate = new Date();
+            //console.log(test.context)
+            const mkdirSync = function (dirPath) {
+                try {
+                    fs.mkdirSync(dirPath)
+                } catch (err) {
+                    if (err.code !== 'EEXIST') throw err
+                }
+            };
+            mkdirSync("./reports/ErrorShots/");
+            //getTime() Returns the number of milliseconds since midnight Jan 1 1970, and a specified date
+            browser.saveScreenshot('./reports/ErrorShots/' + screenDate.getTime() +'.png');
+        }
+    },
 
 
     /**

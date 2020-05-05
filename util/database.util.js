@@ -25,7 +25,7 @@ class Database {
         return connection;
     }
     
-    retrieve = async function(tableName){
+    retrieve(){
         const connection = this.getConnection()
         connection.connect()
         console.log('inside retrieve') 
@@ -44,7 +44,7 @@ class Database {
         // console.log(arr)
         // console.log(typeof arr)
         // return arr
-    }
+}
 
     returnArray = async ()=>{
         var arr = []
@@ -70,6 +70,7 @@ class Database {
     //     connection.end()
     // }
     
+
     insert(tableName, values){
         const connection = this.getConnection()
         connection.connect()
@@ -82,7 +83,6 @@ class Database {
         })
         connection.end()
     }
-
     getMongoConnection(){
     }
 }
