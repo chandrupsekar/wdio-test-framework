@@ -15,6 +15,8 @@ class LoginPageElements{
     get password() { return $('#password') }    //locator with id
     get loginBtn() { return $('#loginBtn') }    //locator with id
     get signUpLink() { return $('=Sign up') }   //locator with linktext
+
     get CheckBoxElement(){ return $('#remember');} //locator with id
+
 }
 module.exports = new LoginPageElements()

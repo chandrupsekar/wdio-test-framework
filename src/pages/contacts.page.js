@@ -7,12 +7,30 @@ const loginPage = require('./login.page')
 const configData = require('../../config/config')
 const homePageElements = require('../elements/homepage.elements')
 class ContactsPage{
-    createNewContact = async (tableName)=>{
-        // elementUtil.doClick(homePageElements.contactLink) //$('#nav-primary-contacts-branch').waitForDisplayed({ timeout: 60000 }) $('#nav-primary-contacts-branch').click()
+    createNewContact = async function(tableName){
+
+        await db.returnArray()
+        // var arr = []  
+        // render = function(results){
+        //     for(var i in results)
+        //         console.log(results[i].username)
+        // }
+        // db.retrieve('contacts').then(results=>{
+        //     render(results)
+        // }).catch(err=>{
+        //     console.log('Promise  rejection error : ' + err)
+        // })
+          
+    }
+}
+module.exports = new ContactsPage()
+
+
+// elementUtil.doClick(homePageElements.contactLink) //$('#nav-primary-contacts-branch').waitForDisplayed({ timeout: 60000 }) $('#nav-primary-contacts-branch').click()
         // elementUtil.doClick(homePageElements.secondaryContact)//$('#nav-secondary-contacts').waitForDisplayed({ timeout: 60000 })  $('#nav-secondary-contacts').click()
         // elementUtil.doClick(contactspageElements.newContactLink)//$('div.add-control button').waitForDisplayed({ timeout: 60000 }) $('div.add-control button').click()
-        var arr = [];
-        arr = await db.retrieve(configData.tableName)
+        // var arr = [];
+        // arr = await db.retrieve(configData.tableName)
 
         // await db.retrieve(dbConfig.tableName).then(result=>{
         //     //console.log(result)
@@ -28,10 +46,7 @@ class ContactsPage{
         // browser.pause(10000)
         // elementUtil.doClick(homePageElements.contactLink)//$('#nav-primary-contacts-branch').click()
         // elementUtil.doClick(homePageElements.secondaryContact) //$('#nav-secondary-contacts').click()
-        // browser.pause(20000)      
-    }
-}
-module.exports = new ContactsPage()
+        // browser.pause(20000)  
 
 
 

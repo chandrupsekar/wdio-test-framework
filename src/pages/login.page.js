@@ -44,6 +44,10 @@ class LoginPage {
         elementUtil.doSetValue(loginPageElements.password, pwd)
         elementUtil.clickElement(loginPageElements.loginBtn)
     }
+    clickOnCheckBox(){
+        browser.pause(5000)
+        elementUtil.clickElement(loginPageElements.clickableCheckBoxElement)
+    }  
 
 }
 module.exports = new LoginPage()

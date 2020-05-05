@@ -9,7 +9,7 @@ const db   = require('../../../util/database.util')
 
 describe('contacts page test',  function(){
     it('creating a new contact ',  function(){
-        browser.url('/')
+        //browser.url('https://app.hubspot.com')
         //login.doLogin(configData.username, configData.password)
         //var arr = [];
         contacts.createNewContact(configData.tableName)

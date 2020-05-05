@@ -1,4 +1,5 @@
 const BROWSER_PROPERTIES = require('./config/browser.conf').browserProperties()//.browserName
+
 global.fs = require('fs')
 require('dotenv').config()
 console.log(process.env.BROWSER_NAME)
@@ -53,13 +54,13 @@ exports.config = {
     //Update capabilities for different browsers 
     capabilities: [{
 
+
         //browserName: BROWSER_PROPERTIES.browserName,
         //browserName: process.env.BROWSER_NAME
     //}
 
         browserName: BROWSER_PROPERTIES.browserName,
     }],
-
     //     browserName: 'firefox',
   //  'moz:firefoxOptions': {         //for headless browser
    //     args: ['-headless']
@@ -67,6 +68,7 @@ exports.config = {
     // //    browserVersion: '74.0 ',
     // //     //name: 'login.test',
     // //     //build: process.env.BUILD_NUMBER
+
     //},{
          browserName: 'chrome',
         'goog:chromeOptions': {            //for headless browser
@@ -118,7 +120,9 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://app.hubspot.com/login',
+
+    baseUrl: '',
+
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 30000,
@@ -139,6 +143,23 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
+    // services: [
+    //     ['selenium-standalone', {
+    //         logPath: 'logs',
+    //         installArgs: {
+    //             drivers: {
+    //                 chrome: { version: '81.0.4044.122' },
+    //                 //firefox: { version: '76.0' }
+    //             }
+    //         },
+    //         args: {
+    //             drivers: {
+    //                 chrome: { version: '81.0.4044.122' },
+    //                 //firefox: { version: '76.0' }
+    //             }
+    //         },
+    //     }]
+    // ],
     services: ['chromedriver'], //'sauce'
     
     // Framework you want to run your specs with.
@@ -166,7 +187,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 12000000
     },
     //
     // =====
@@ -211,7 +232,9 @@ exports.config = {
      */
     before: function (capabilities, specs) {
         browser.url('/')
+
         browser.maximizeWindow()
+
         browser.pause(30000)
     },
     /**

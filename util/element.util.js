@@ -45,6 +45,7 @@ class ElementUtil{
         element.doubleClick()
     }
 
+
     //Return true if the element: exists, is visible, is within viewport, its center is not overlapped with another element, is not disabled.
     isElementClickable(element){
         element.waitForEnabled(time)
@@ -413,7 +414,6 @@ class ElementUtil{
     validateNotInstanceOf(value, constructor, testMsg){
         return assert.isNotBoolean(value, constructor, testMsg)
     }
-
 }
 
 module.exports  = new ElementUtil()

@@ -8,6 +8,7 @@ const sheetData=require('../../../config/sheetconfig')
 const elementUtil = require('../../../util/element.util')
 
 
+
 describe('login page feature test', function(){
 
     //***test case to verify the login page title***//       
@@ -32,6 +33,5 @@ describe('login page feature test', function(){
             elementUtil.clickOnCheckBox(loginPageElements.CheckBoxElement)
             elementUtil.validateIfEqual(true, elementUtil.isElementSelected(loginPageElements.CheckBoxElement), 'Checkbox not selected')
     })
-
 })
 
