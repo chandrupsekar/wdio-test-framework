@@ -11,7 +11,7 @@ describe('login page feature test', function(){
 
         //***test case to verify the login page title***       
     it('verify login page title', function(){
-        //browser.url('/')         //launching the browser '/' indicates the base url in wdio.config.js
+        //browser.url('/https://app.hubspot.com')         //launching the browser '/' indicates the base url in wdio.config.js
         //browser.maximizeWindown
         const title = loginPage.PageTitle()
         console.log('login page title is :', title);
@@ -24,7 +24,7 @@ describe('login page feature test', function(){
     })
         //***test case to login into the page***
     it('verify login', function(){
-        //browser.url('/')
+        //browser.url('/https://app.hubspot.com')
         //loginPage.doLogin('naveenanimation30@gmail.com', 'Test@1234')
         //sample line 
         loginPage.doLogin(configData.username, configData.password)
@@ -39,7 +39,7 @@ describe('login page feature test', function(){
     // })
     //***test to check if checkbox is selected***
     it('click on checkbox', function(){
-            // browser.url("/");
+            // browser.url("https://app.hubspot.com");
             browser.pause(5000);
             loginPage.clickOnCheckBox();
             browser.pause(5000);

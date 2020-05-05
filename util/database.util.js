@@ -25,37 +25,51 @@ class Database {
         return connection;
     }
     
-    retrieve(){
+    retrieve = async function(tableName){
         const connection = this.getConnection()
-        connection.connect();
-        var query= connection.query('select * from articles', function(err, result){
-            if(err){
-                console.log(err)
-                return
-            }
-            console.log(result);
+        connection.connect()
+        console.log('inside retrieve') 
+        return new Promise((resolve, reject)=>{
+            connection.query(`select * from ${tableName}`, function(err, result){
+                connection.end()
+                if(result === undefined){
+                    reject(new Error('Error rows is undefined'))
+                }
+                else{ 
+                    resolve(result)
+                }
+            })
         })
-        connection.end()
-    }
-    
-    insert(){
-        const connection = this.getConnection()
-        connection.connect();
-        var article={
-            author : 'Shree Ramchandra',
-            title : 'Node tutorial',
-            body: 'foo bar'
-        }
-        var query = connection.query('insert into articles set ?', article, (err, result)=>{
-            if(err){
-                console.error(err)
-            }else{
-                console.log(result);
-            }
-        })
-        connection.end()
+        // console.log('inside db.util')
+        // console.log(arr)
+        // console.log(typeof arr)
+        // return arr
     }
 
+    returnArray = async ()=>{
+        var arr = []
+        
+        await db.retrieve('contacts').then(results=>{
+            console.log(results)
+        }).catch(err=>{
+            console.log('Promise  rejection error : ' + err)
+        })
+        //console.log(arr)
+    }
+
+    // retrieve(){
+    //     const connection = this.getConnection()
+    //     connection.connect();
+    //     var query= connection.query('select * from articles', function(err, result){
+    //         if(err){
+    //             console.log(err)
+    //             return
+    //         }
+    //         console.log(result);
+    //     })
+    //     connection.end()
+    // }
+    
     insert(tableName, values){
         const connection = this.getConnection()
         connection.connect()
@@ -68,6 +82,7 @@ class Database {
         })
         connection.end()
     }
+
     getMongoConnection(){
     }
 }

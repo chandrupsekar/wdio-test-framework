@@ -24,6 +24,7 @@
     "@wdio/selenium-standalone-service": "^6.0.12",
     "@wdio/spec-reporter": "^6.0.12",
     "@wdio/sync": "^6.0.12",
+    "allure-commandline": "^2.13.0",
     "chai": "^4.2.0",
     "chai-webdriverio": "^1.0.0",
     "chromedriver": "^80.0.2",
