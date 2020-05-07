@@ -8,8 +8,8 @@ const configData = require('../../config/config')
 const homePageElements = require('../elements/homepage.elements')
 class ContactsPage{
     createNewContact = async function(tableName){
-
-        await db.returnArray()
+        console.log('createContact')
+        //await db.returnArray()
         // var arr = []  
         // render = function(results){
         //     for(var i in results)
